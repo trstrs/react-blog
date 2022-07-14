@@ -1,3 +1,153 @@
+body {
+  background: #1e1f21;
+  color: #fff;
+}
+
+.container {
+  background: #1e1f21;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:link, a:focus, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1b1b1b;
+  *border-bottom: 1px solid #3d3d3d;
+  box-shadow: 0 1px 5px 0 #000;
+}
+
+.blog_container {
+
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.logo img {
+  pointer-events: none;
+  height: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo img {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.post_sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px 20px;
+}
+
+.post_sort span {
+  font-size: 0.9em;
+  margin: 0 4px;
+  padding: 5px 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.25s;
+}
+
+.post_sort span.post_sort_tit {
+  cursor: auto;
+  flex-direction: row;
+}
+
+.post_sort span:last-child {
+  margin-right: 0;
+}
+
+.post_sort span.active {
+  *background: #2e2e2e;
+  border: 1px solid #999;
+  border-radius: 15px;
+}
+
+.post_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post_list li {
+  list-style: none;
+  padding: 18px 20px;
+  background: #2c2d30;
+  border-bottom: 1px solid #444;
+}
+
+.post_list li:first-child {
+  border-top: 1px solid #444;
+}
+
+.post_list li a {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.post_subject {
+  margin: 0;
+  color: inherit;
+}
+
+.post_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+  color: inherit;
+}
+
+.post_date {
+  
+}
+
+.post_like {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.post_like i {
+  font-style: normal;
+  margin-top: -1px;
+}
+
+.post_like span {
+  margin-left: 2px;
+}
+
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +186,4 @@
     transform: rotate(360deg);
   }
 }
+*/
